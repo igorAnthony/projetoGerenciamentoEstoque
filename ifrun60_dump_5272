@@ -1,0 +1,41 @@
+[05/11/22 15:26:49 Hora oficial do Brasil]::Client Status [ConnId=0, PID=5272]
+	>> ERROR: Abnormal termination, Error Code: C0000005 ACCESS_VIOLATION
+
+======================= STACK DUMP =======================
+
+Fault address:  67F355C1 01:000345C1
+Module: C:\orant\BIN\CORE40.dll
+
+System Information:
+Operating System: Windows NT Version 6.2 Build 9200 
+Command line: "C:\orant\BIN\ifrun60.EXE" "C:\Users\igora\trabalho\CHI777.fmx"
+FORM/BLOCK/FIELD: CHI777:VENDA.NR_CPFCLIENTE
+Last Trigger: WHEN-VALIDATE-ITEM - (Error: Unhandled Exception)
+Msg: ORA-01422
+Last Builtin: FIRST_RECORD - (Successfully Completed)
+
+Registers:
+EAX:0406A4F4
+EBX:00000000
+ECX:00000000
+EDX:00000000
+ESI:0000000B
+EDI:03FE2DBC
+CS:EIP:0023:67F355C1
+SS:ESP:002B:0019F428  EBP:0019F438
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+------------------- Call Stack Trace ---------------------
+Frameptr   RetAddr  Param#1  Param#2  Param#3  Param#4  Function Name       
+0x0019f438 67f2ea7e 03fe0980 03fe09b0 03fe2d00 0406a378 0x67f355c1          
+0x0019f464 67f351b6 03fe0980 03fe0900 0406a584 00000000 0x67f2ea7e          
+0x0019f490 5d15ba4b 00000000 03fe09b0 0406a588 00000000 0x67f351b6          
+0x0019f4ac 5d12b2e1 04002780 0406a588 00000000 00000000 0x5d15ba4b          
+0x0019f4c8 5def3078 0400deb4 023d1c58 023d05b8 00000400 0x5d12b2e1          
+0x0019fd1c 5def19e9 00000014 00000000 00000002 02c50b90 0x5def3078          
+0x0019fd40 5def18be 023d07b8 00000000 00000000 00000002 0x5def19e9          
+0x0019fd60 67948973 023d07b8 00000000 00000000 00000002 0x5def18be          
+0x0019fdb0 6794a3b1 023d1d3c 00403010 00000000 00000002 0x67948973          
+------------------- End of Stack Trace -------------------
+
+
